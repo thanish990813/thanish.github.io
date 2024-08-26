@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- fontawesom -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <!-- main css -->
+   <link rel="stylesheet" href="style.css">
+    <title>portfolio website</title>
+    
+</head>
+<body>
+    <!-- header -->
+     <header class="header">
+     <a href="#" class="logo">portfolio</a>
+
+     <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+<nav class="navbar">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+
+</nav>
+    </header>   
+
+    <!-- home section design -->
+     <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, It's Me</h3>
+            <h1>Ahamed Thanish</h1>
+            <h3>and I'm a <span>UI/UX Designer</span> </h3>
+            <p>Hello! there, I am Ahamed Thanish and studying Computer Science and Software Engineer undergraduate who passionate about creativity and I am a UI/UX designer web designer, mobile application designer and as well as educator.
+
+                keen on UI/UX designs and aspiring worker. My passion for design especially in the web and mobile Application design side and having great experience..
+                </p>
+    <div class="social-media">
+        <a href="https://www.facebook.com/profile.php?id=100061295036325&mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/thanish-ahamed-440b63271?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/thanish1316/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/thanish990813" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div> 
+
+    <a href="images/Cv  (1).pdf" download class="btn btn2">Download CV</a>
+</div>
+
+<div class="home-img">
+<img src="image.png" alt=""></div>
+     </section>
+
+     <!-- About section design -->
+      <section class="about" id="about">
+<div class="about-img">
+    <img src="tuxpi.com.1723014777.jpg" alt="">
+</div>
+
+<div class="about-content">
+    <h2 class="heading">About <span>Me</span></h2>
+    <h3>UI/UX Designer</h3>
+    <p>In my 2 year experience as a UI/UX designer, I have developed a solid foundation in creating intuitive, user-centered designs that enhance the overall digital experience. I have worked on various projects, from wireframing and prototyping to conducting user research and testing,freelancing ensuring that design solutions align with both user needs and business goals. My experience has allowed me to hone my skills in tools like Figma, Adobe XD, and Sketch, while also collaborating closely with cross-functional teams including developers and product managers. This journey has not only deepened my understanding of design principles but also taught me the importance of empathy, adaptability, and effective communication in the design process.</p>
+
+
+    <div class="tab-titles">
+        <p1 class="tab-links active-link" onclick="opentab('Skills')">Skills</p1>
+        <p1 class="tab-links"onclick="opentab('Experience')">Experience</p1>
+        <p1 class="tab-links"onclick="opentab('Education')">Education</p1>
+     </div>
+    
+     <div class="tab-contents active-tab" id="Skills">
+        <ul>
+            <li><span>UI/UX Design</span><br>Figma, Adobe Xd</li>
+            <ul>Prototyping and Wireframing <ul>
+            <li>User Research</li><br>
+            <li><span>Web Design</span><br>User Research and Analysis</li>
+            <ul>Information Architecture</ul><br>
+            <li><span>Frontend Development</span><br>HTML, CSS, Java Script</li>
+            <ul>Responsive Design</ul><br>
+            <li><span>Mobile Application</span><br>Mobile Frame Works</li>
+            <ul>Testing</ul><br>
+        </ul>
+        
+     </div>
+    
+     <div class="tab-contents"id="Experience">
+        <ul>
+            <li><span>Stephan Innovations (Pvt) Ltd </span><br>Western Province, Negombo, Sri Lanka.</li>
+            <ul>UI/UX Designer Internship (April - September 2024)</ul>
+            <br>
+            <li><span>Freelancing</span><br>work with Fiver</li>
+            <ul>02 years Onwards</ul><br>
+            <li><span>Security Vulnerability Assesment- CS</span><br>Client - Narah Stationers (Kollupity, Colombo 03)</li>
+            <ul>Final Project Experience  (2023)</ul><br>
+            
+        </ul>
+        
+     </div>
+    
+     <div class="tab-contents"id="Education">
+        <ul>
+            <li><span>Sri Lankan Insitute of Information Technology (SLIIT) </span><br>B.SC (Hons) Computer Science and Software Engineering.</li>
+            <ul>undergraduate (2021-2024)<ul><br>
+           
+            <li><span>Generative AI</span><br>Pantech.AI</li>
+            <ul>Certification Warriors Way Master Class- (India)</ul><br>
+            <li><span>Foundation of User Experience (UX) Design</span><br>Coursera Certification (2024)</li><br>
+            
+            <li><span>Sri Lankan Inventors Commission (SLIC)</span><br>Provincial Invention Exphibition</li>
+            <ul>Certification (Jaffna)</ul><br>
+            <li><span>Techno World Studies (Pvt) Ltd</span><br>  A Grade in (Level- I)</li>
+            <ul> A Grade in (Level- V)</ul>
+        </ul>
+        
+     </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+      
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+     <br><br>
+ 
+
+    <a href="#" class="btn">Read more</a>
+</div>
+      </section>
+
+      <!-- Service section design -->
+<section class="services" id="services">
+<h2 class="heading">My <span>Services</span></h2>
+
+<div class="services-container">
+    <div class="services-box">
+        <i class="fa-solid fa-mobile"></i>
+        <h3>UI/UX Designing</h3>
+        <p> We offer a variety of services focused on crafting engaging and user-centric digital experiences. Their offerings typically include UI design, which encompasses visual design elements such as layout, color schemes, typography, and iconography, as well as the development of design systems to maintain consistency throughout the product. They also create interactive prototypes to demonstrate user interactions. In terms of UX design, they conduct user research to gain insights into user needs and behaviors, develop user personas to inform design choices, and structure information for easy navigation.</p>
+  
+        <a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="services-box">
+        <i class="fa-solid fa-palette"></i>
+        <h3>Web Designing</h3>
+        <p> We offer Visual Design as Crafting the look and feel of the website, including layout, color schemes, typography, and graphics and
+            make Responsive Design Ensuring the website looks and functions well on all devices, from desktops to smartphones also
+            we can Branding as Integrating branding elements such as logos, brand colors, and fonts to maintain brand consistency.</p>
+   <a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="services-box">
+        <i class="fa-brands fa-android"></i>
+        <h3>Mobile Application</h3>
+        <p> Mobile application services cover a broad range of tasks and expertise, aimed at creating effective, user-friendly mobile apps.
+            we create Mobile App Design Crafting the visual elements and user experience of the app, including layouts, color schemes, icons, and interactive elements.
+            Wireframing and Prototyping and developing wireframes and interactive prototypes to visualize and test app functionality and user flows.
+            User Research application Conducting research to understand user needs, preferences, and behaviors to inform the design process.</p>
+   <a href="#" class="btn">Read More</a>
+    </div>
+    <div class="services-box">
+        <i class="fa-solid fa-code"></i>
+        <h3>Frontend Development</h3>
+        <p> We offer a variety of services focused on crafting engaging and user-centric digital experiences. Their offerings typically include UI design, which encompasses visual design elements such as layout, color schemes, typography, and iconography, as well as the development of design systems to maintain consistency throughout the product. They also create interactive prototypes to demonstrate user interactions. In terms of UX design, they conduct user research to gain insights into user needs and behaviors, develop user personas to inform design choices, and structure information for easy navigation. Additionally, they produce wireframes to outline page layouts and perform usability testing to refine designs based on user feedback. Other services may include interaction design for user engagement, accessibility design to accommodate diverse users, responsive design for compatibility across devices, and strategic consultation to align design efforts with business objectives. These services collectively ensure that digital products are not only aesthetically pleasing but also functional and user-friendly.</p>
+   <a href="#" class="btn">Read More</a>
+    </div>
+</div>
+</section>
+
+   <!-- portfolio section design -->
+
+<section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Projects</span></h2>
+    <div class="Portfolio-container">
+        <div class="portfolio-box">
+            <img src="smartmockups_m00oavgf.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>UI/UX Design</h4>
+                <p>Fairbay E-Commerce App.</p> 
+                <i class="fa-solid fa-up-right-from-square"></i>
+                <a href="https://www.figma.com/file/rZu5FnlvoRbTgJsrsRbPSC/ECommerce-App?type=design&node-id=0%3A1&mode=design&t=2mzFOEOnkLUO50Sw-1" ></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+        <img src="smartmockups_m07spxsq.jpg" alt="">
+        <div class="portfolio-layer">
+            <h4>UI/UX Design</h4>
+            <p>Saloon App(user and Staff)</p>
+            <i class="fa-solid fa-up-right-from-square"></i>
+            <a href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FOVedrTPLU8hllkGzMorDSM%2FSaloon-shop%3Fnode-id%3D0-1%26t%3DH2BEptcXgbD6YNV8-1" allowfullscreen></iframe></a>
+        </div>
+    </div>
+
+    <div class="portfolio-box">
+    <img src="smartmockups_m00osb2j.jpg" alt="">
+    <div class="portfolio-layer">
+        <h4>Web Design</h4>
+        <p>E-Commerce Electronics App with Admin page</p>
+        <i class="fa-solid fa-up-right-from-square"></i>
+        <a href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2F7mzjY0n3mZbKErIyfa5iMX%2Fweb-design-assignment-05%3Fnode-id%3D0-1%26t%3DnRXC3fYpr0ifrKNJ-1" allowfullscreen></iframe>"></a>
+    </div>
+</div>
+
+<div class="portfolio-box">
+<img src="smartmockups_m07sedr0.jpg" alt="">
+<div class="portfolio-layer">
+    <h4>UI/UX Design</h4>
+    <p>My School Staff App</p>
+    <i class="fa-solid fa-up-right-from-square"></i>
+    <a href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2F4h25pSbbbSK59LpFKoToxR%2FSchool-Staff-Application-Ui%3Ft%3DH2BEptcXgbD6YNV8-1" allowfullscreen></iframe></a>
+</div>
+</div>
+
+
+<div class="portfolio-box">
+<img src="images/smartmockups_lzm8xngs.jpg" alt="">
+<div class="portfolio-layer">
+    <h4>UI/UX Design</h4>
+    <p>Coffee order App.</p>
+    <i class="fa-solid fa-up-right-from-square"></i>
+    <a href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FBQkPek1Ix2gdbAZ7WT7Q2L%2FCOFEE-SHOP-UI%3Ft%3DqO0zwfIQ6ZlJcVHa-1" allowfullscreen></iframe>"></a>
+</div>
+</div>
+
+<div class="portfolio-box">
+<img src="17c5981851d829f02ba5f2248c18300d.jpg" alt="">
+<div class="portfolio-layer">
+    <h4>Mobile App Design</h4>
+    <p>Movie Tcket Online Booking</p>
+    <i class="fa-solid fa-up-right-from-square"></i>
+    <a href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FCxMAcGqxrimUIUa3SO2aTx%2FMOVIE-TICKET-BOOKING-APP%3Fnode-id%3D0-1%26t%3DnRXC3fYpr0ifrKNJ-1" allowfullscreen></iframe>"></a>
+</div>
+</div>
+
+    </div>
+</section>
+
+<!-- contact section design -->
+ <section class="contact" id="contact">
+    <h2 class="heading"> Contact <span>Me</span></h2>
+    <form action="#">
+        <div class="input-box">
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="email Address">
+        </div>
+
+        <div class="input-box">
+            <input type="number" placeholder="Mobile Number">
+            <input type="text" placeholder="email Subject">
+        </div>
+
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+
+ </section>
+
+ <!-- footer section design -->
+  
+  <footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2024 by @ThanishAhamed | All Rights Reserved.</p>
+    </div>
+
+    <div class="footer-iconTop">
+       <a href="home"><i class="fa-solid fa-angle-up"></i></a> 
+    </div>
+  </footer>
+
+  
+<!-- scroll reveal -->
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- MAIN JS -->
+
+            <script src="Js/main.Js"></script>
+
+</body>
+</html>
